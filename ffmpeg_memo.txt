@@ -54,6 +54,7 @@ ffmpeg -i col_high_%04d.png -s 480x270 col_high_%04d.png
 
 〇一括名前変更
 ffmpeg -i input%04d.jpg output%04d.png
+ffmpeg -i %d.jpg output%04d.png
 
 〇連番画像を0(0000.png)からにする
 ffmpeg -i video.mp4 -start_number 0 output%d.png
