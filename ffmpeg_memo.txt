@@ -60,7 +60,7 @@ ffmpeg -i %d.jpg output%04d.png
 ffmpeg -i video.mp4 -start_number 0 output%d.png
 ・0からではないpng連番画像を0からのjpg連番画像に変換する
 (ex. 59からの連番画像を0からにする場合)
-ffmpeg -start_number 0059 -i image%04d.png -start_number 0000 image%04d.png
+ffmpeg -start_number 0079 -i image%04d.png -start_number 0000 image%04d.png
 
 ffmpeg -start_number 0120 -i col_high_%04d.png -start_number 0000 col_high_%04d.png
 
