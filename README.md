@@ -119,12 +119,9 @@ ffmpeg -i col_high_%04d.png LR.mp4
 ```
 ffmpeg -framerate 30 -start_number 101 -i image_%03d.png -vframes 600 -vcodec libx264 -pix_fmt yuv420p -r 60 out.mp4
 ```
-最初の-framerate 30fpsの連番画像
-二つ目の-framerate 60fpsで動画化
--vframes <number>
-"number" で指定したフレーム数だけ変換
+最初の"-framerate 30fps"の連番画像 二つ目の"-framerate 60fps"で動画化 "-vframes <number>" "number" で指定したフレーム数だけ変換
 
-
+  
 ffmpeg -framerate 60 -start_number 0001 -i image%04d.png -vframes 600 -vcodec libx264 -pix_fmt yuv420p -r 60 out.mp4
 
 ffmpeg -framerate 60 -start_number 0176 -i col_high_%04d.png -vframes 411 -vcodec libx264 -pix_fmt yuv420p -r 30 out.mp4
