@@ -47,7 +47,7 @@ ffmpeg -i input.mkv -vf fps=30 -vcodec utvideo output.mkv
 動画時間は変わらない
 
 
-## 連番画像変換
+## 動画 → 連番画像
 ・動画1秒あたりフレームレートの枚数分画像が生成
 ```
 ffmpeg -i input.mp4 image%04d.png
@@ -60,9 +60,7 @@ ffmpeg -i input.mp4 _high_%04d.png
 ```
 ffmpeg -i input.mp4 -r 60 image%04d.png
 ```
-学習データの場合は
-col_high_0000.pngからスタート
-
+学習データの場合はcol_high_0000.pngからスタート
 
 ### 参考
 https://qiita.com/cha84rakanal/items/e84fe4eb6fbe2ae13fd8
