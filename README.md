@@ -109,7 +109,8 @@ ffmpeg -i video.mp4 -start_number 0 col_high_%04d.png
 ### 参考
 https://kakashibata.hatenablog.jp/entry/2018/11/25/155437
 
-## 連番画像から動画
+
+## 連番画像 → 動画化
 ```
 ffmpeg -i image%04d.png LR.mp4
 ```
