@@ -25,15 +25,15 @@ https://knooto.info/youtube-dl/#%E5%8B%95%E7%94%BB%E3%82%92%E3%83%80%E3%82%A6%E3
 ## 動画の指定の部分を抜き出し
 ・秒数指定(ex. 0:30から1分間分を抜き出し)
 ```
-ffmpeg.exe -ss 0:30 -i input.mp4 -t 1:00 -vcodec copy -acodec copy output.mp4
+ffmpeg -ss 0:30 -i input.mp4 -t 1:00 -vcodec copy -acodec copy output.mp4
 ```
 ・区間指定(ex. 0:30～1:30を抜き出し)
 ```
-ffmpeg.exe -i input.mp4 -ss 0:30 -to 1:30 -vcodec copy -acodec copy output.mp4
+ffmpeg -i input.mp4 -ss 0:30 -to 1:30 -vcodec copy -acodec copy output.mp4
 ```
 ・開始時間とフレーム数で切り出し(ex. 0秒から100フレーム切り出し)
 ```
-ffmpeg.exe -ss 0 -i input.mp4 -vcodec copy -acodec copy -vframes 100 output.mp4
+ffmpeg -ss 0 -i input.mp4 -vcodec copy -acodec copy -vframes 100 output.mp4
 ```
 
 ### 参考
@@ -62,7 +62,7 @@ ffmpeg -i input.mp4 _high_%04d.png
 ```
 ffmpeg -i input.mp4 -r 60 image%04d.png
 ```
-学習データの場合はcol_high_0000.pngからスタート
+学習データの場合は_high_0000.pngからスタート
 
 ### 参考
 https://qiita.com/cha84rakanal/items/e84fe4eb6fbe2ae13fd8
@@ -73,7 +73,7 @@ https://qiita.com/cha84rakanal/items/e84fe4eb6fbe2ae13fd8
 ffmpeg -i image%04d.png -s 480x270 image%04d.png
 ```
 ```
-ffmpeg -i col_high_%04d.png -s 480x270 _high_%04d.png
+ffmpeg -i _high_%04d.png -s 480x270 _high_%04d.png
 ```
 
 ## 一括名前変更
@@ -97,13 +97,13 @@ ffmpeg -i video.mp4 -start_number 0 output%d.png
 ffmpeg -start_number 0059 -i image%04d.png -start_number 0000 image%04d.png
 ```
 ```
-ffmpeg -start_number 0120 -i col_high_%04d.png -start_number 0000 col_high_%04d.png
+ffmpeg -start_number 0120 -i _high_%04d.png -start_number 0000 _high_%04d.png
 ```
 ```
 ffmpeg -start_number 0181 -i image%04d.png -start_number 0000 image%04d.png
 ```
 ```
-ffmpeg -i video.mp4 -start_number 0 col_high_%04d.png
+ffmpeg -i video.mp4 -start_number 0 _high_%04d.png
 ```
 
 ### 参考
@@ -114,9 +114,8 @@ https://kakashibata.hatenablog.jp/entry/2018/11/25/155437
 ```
 ffmpeg -i image%04d.png LR.mp4
 ```
-
 ```
-ffmpeg -i col_high_%04d.png LR.mp4
+ffmpeg -i _high_%04d.png LR.mp4
 ```
 
 ```
