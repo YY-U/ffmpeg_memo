@@ -59,6 +59,7 @@ ffmpeg -i input.mp4 _high_%04d.png
 ```
 
 ## 動画から1秒あたり60枚の連番ファイルをつくる場合
+
 ```
 ffmpeg -i input.mp4 -r 60 image%04d.png
 ```
@@ -100,11 +101,9 @@ ffmpeg -start_number 0059 -i image%04d.png -start_number 0000 image%04d.png
 ffmpeg -start_number 0120 -i _high_%04d.png -start_number 0000 _high_%04d.png
 ```
 ```
-ffmpeg -start_number 0181 -i image%04d.png -start_number 0000 image%04d.png
-```
-```
 ffmpeg -i video.mp4 -start_number 0 _high_%04d.png
 ```
+
 
 ### 参考
 https://kakashibata.hatenablog.jp/entry/2018/11/25/155437
@@ -121,8 +120,8 @@ ffmpeg -i _high_%04d.png LR.mp4
 ```
 ffmpeg -framerate 30 -start_number 101 -i image_%03d.png -vframes 600 -vcodec libx264 -pix_fmt yuv420p -r 60 out.mp4
 ```
-一つ目の"-framerate 30fps"で連番画像のフレームレート指定
-二つ目の"-framerate 60fps"で動画化する際のフレームレート指定
+一つ目の"-framerate 30fps"で連番画像のフレームレートを指定
+二つ目の"-framerate 60fps"で動画化する際のフレームレートを指定
 "-vframes <number>" "number"で指定したフレーム数だけ変換
  
 ```
