@@ -66,7 +66,7 @@ ffmpeg -i input.mp4 -r 60 image%04d.png
 学習データの場合は_high_0000.pngからスタート
 
 ### 参考
-https://qiita.com/cha84rakanal/items/e84fe4eb6fbe2ae13fd8
+・https://qiita.com/cha84rakanal/items/e84fe4eb6fbe2ae13fd8
 
 
 ## 複数画像一括リサイズ方法
