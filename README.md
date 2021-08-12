@@ -103,7 +103,7 @@ ffmpeg -i video.mp4 -start_number 0 _high_%04d.png
 
 
 ### 参考
-https://kakashibata.hatenablog.jp/entry/2018/11/25/155437
+・https://kakashibata.hatenablog.jp/entry/2018/11/25/155437
 
 
 ## 連番画像 → 動画化
