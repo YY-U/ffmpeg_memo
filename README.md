@@ -20,7 +20,7 @@ youtube-dl YouTubeの動画URL
 youtube-dl YouTubeの動画URL -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"
 ```
 ### 参考
-https://knooto.info/youtube-dl/#%E5%8B%95%E7%94%BB%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B
+・https://knooto.info/youtube-dl/#%E5%8B%95%E7%94%BB%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B
 
 ## 動画の指定の部分を抜き出し
 ・秒数指定(ex. 0:30から1分間分を抜き出し)
