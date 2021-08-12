@@ -37,8 +37,8 @@ ffmpeg -ss 0 -i input.mp4 -vcodec copy -acodec copy -vframes 100 output.mp4
 ```
 
 ### 参考
-https://moewe-net.com/uncategorized/ffmpeg-cut-movie
-https://nico-lab.net/cutting_ffmpeg/
+・https://moewe-net.com/uncategorized/ffmpeg-cut-movie
+・https://nico-lab.net/cutting_ffmpeg/
 
 
 ## フレームレート変換
