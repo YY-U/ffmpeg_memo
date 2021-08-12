@@ -84,9 +84,6 @@ ffmpeg -i input%04d.jpg output%04d.png
 ```
 ffmpeg -i %d.jpg output%04d.png
 ```
-```
-ffmpeg -i %d.png output%04d.png
-```
 
 ## 連番画像を0(0000.png)からにする
 ```
