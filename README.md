@@ -132,6 +132,6 @@ ffmpeg -start_number 0096 -i image%04d.png output.mp4
 ```
 連番画像枚数をそのままフレームレートにする場合
 ```
-ffmpeg -start_number 0096 -i image%04d.png -r 1 output.mp4
+ffmpeg -r 1 -start_number 0096 -i image%04d.png output.mp4
 ```
 
