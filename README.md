@@ -130,3 +130,8 @@ ffmpeg -framerate 60 -start_number 0176 -i _high_%04d.png -vframes 411 -vcodec l
 ```
 ffmpeg -start_number 0096 -i image%04d.png output.mp4
 ```
+連番画像枚数をそのままフレームレートにする場合
+```
+ffmpeg -start_number 0096 -i image%04d.png -r 1 output.mp4
+```
+
