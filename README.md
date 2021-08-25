@@ -128,5 +128,5 @@ ffmpeg -framerate 60 -start_number 0001 -i image%04d.png -vframes 600 -vcodec li
 ffmpeg -framerate 60 -start_number 0176 -i _high_%04d.png -vframes 411 -vcodec libx264 -pix_fmt yuv420p -r 30 out.mp4
 ```
 ```
-ffmpeg start_number 0096 -i image%04d.png output.mp4
+ffmpeg -start_number 0096 -i image%04d.png output.mp4
 ```
