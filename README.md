@@ -142,6 +142,11 @@ ffmpeg -r 1 -start_number 0096 -i image%04d.png output.mp4
 ```
 ffmpeg -start_number 0357 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" gifanimation.gif
 ```
+```
+cd GT ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" GT6.gif ; cd .. ;cd 
+
+```
+
 ### 参考
 ・https://hydrocoast.jp/index.php?Linux/ffmpeg
  
