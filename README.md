@@ -143,7 +143,7 @@ ffmpeg -r 1 -start_number 0096 -i image%04d.png output.mp4
 ffmpeg -start_number 0357 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" gifanimation.gif
 ```
 ```
-cd GT ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" GT6.gif ; cd .. ;cd 
+cd GT ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" 6GT.gif ; cd .. ; cd LR0.5x2 ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" 6LR0.5x2.gif ; cd .. ; cd LR0.25x4 ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" 6LR0.25x4.gif ; cd .. ; cd LR0.125x8 ; ffmpeg -start_number 0001 -r 1 -i image%04d.png -filter_complex "fps=$fps,scale=-1:-1:flags=lanczos,split[a],palettegen,[a]paletteuse" 6LR0.125x8.gif ; cd ..
 
 ```
 
