@@ -35,6 +35,9 @@ ffmpeg -i input.mp4 -ss 0:30 -to 1:30 -vcodec copy -acodec copy output.mp4
 ```
 ffmpeg -ss 0 -i input.mp4 -vcodec copy -acodec copy -vframes 100 output.mp4
 ```
+```
+ffmpeg -ss 30 -i input.mp4 -vcodec copy -acodec copy -vframes 300 output.mp4
+```
 
 ### 参考
 ・https://moewe-net.com/uncategorized/ffmpeg-cut-movie
